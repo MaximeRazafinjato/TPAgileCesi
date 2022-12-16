@@ -20,16 +20,18 @@ function App() {
 
   return (
     <div>
-      <header className="App-header">
+      <header className="App-header" style={{ position: "absolute" }}>
         <div style={{ width: "50px" }}>
           <CustomNavbar onAddBtnClick={onAddBtnClick} />
         </div>
+      </header>
+      <div style={{ paddingTop: "20px" }}>
         {inputList.length != 0 && (
           <div style={{ padding: 1 }}>
             <Page inputList={inputList} />
           </div>
         )}
-      </header>
+      </div>
     </div>
   );
 }
