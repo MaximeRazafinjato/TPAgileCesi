@@ -9,7 +9,7 @@ import {
   useProSidebar,
 } from "react-pro-sidebar";
 
-function CustomNavbar({ onAddBtnClick, setInputList }) {
+function CustomNavbar({ onAddBtnClick, onAddTextClick }) {
   const { collapseSidebar } = useProSidebar();
   return (
     // <div>
@@ -39,7 +39,7 @@ function CustomNavbar({ onAddBtnClick, setInputList }) {
         <Menu>
           <MenuItem onClick={() => onAddBtnClick()}>Bouton</MenuItem>
           <MenuItem> TextArea</MenuItem>
-          <MenuItem> TextBox</MenuItem>
+          <MenuItem onClick={() => onAddTextClick()}>TextBox</MenuItem>
         </Menu>
       </Sidebar>
       {/* <main>
