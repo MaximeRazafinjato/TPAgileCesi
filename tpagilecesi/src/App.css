@@ -1,0 +1,23 @@
+
+/* 
+.navbarHidden {
+  visibility: hidden;
+}
+
+.navbarHidden:hover{
+  visibility: visible;
+} */
+
+.fieldContainer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.test {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: red;
+}
+
